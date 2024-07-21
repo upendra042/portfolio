@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Portfolio</h1>
+		<h6>Hello I'm Upendra Chøwdary</h6>
+		<img src="upe.jpg" alt="Profile Picture" class="profile-pic">
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="proj.html">Projects</a></li>
+                <li><a href="cont.html">Contact</a></li>
+				<li><a href="res.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate developer with experience in various technologies.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </section>
+	<form id="contact-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter name" required><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter email"><br>
+		
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" placeholder="Enter text-message"></textarea><br>
+		
+		<button type="submit">Send</button>
+	</form>
+	<script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

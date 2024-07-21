@@ -1,0 +1,133 @@
+h6{
+    font-size: 40px;
+    color: blue;
+    text-align: center;
+}
+h1{
+    color: rgb(17, 131, 22);
+}
+img{
+    height: 200px;
+    width: 150px;
+    border-radius: 30px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #71b7e6, #5e5263);
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+}
+
+#about, #contact, #resume {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
